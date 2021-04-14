@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mad Libs</h1>
+
+    <ul>
+      <li>Noun: <input type="text" id="noun"></li>
+      <li>Adjective: <input type="text" id="adjective"></li>
+      <li>Someone's Name: <input type="text" id="person"></li>
+    </ul>
+
+    <button id="lib-button">Lib it!</button>
+
+    <p>Generated story: 
+    <span id="story"></span>
+    </p>
+
+    <script>
+        let libButton = document.getElementById('lib-button');
+        let libIt = function() {
+            let noun = document.getElementById('noun').value;
+            let noun = document.getElementById('adjective').value;
+            let noun = document.getElementById('person').value;
+
+            let storyDiv = document.getElementById("story");
+            storyDiv.innerHTML = "cruel mary and the fish walking on the beach";
+        };
+        libButton.addEventListener('click', libIt);
+    
+    
+    
+       
+    
+    
+    
+    
+    
+    
+    </script>
+
+
+
+
+
+</body>
+</html>

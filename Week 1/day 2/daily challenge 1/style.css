@@ -1,0 +1,79 @@
+*{
+	text-align: left;
+}
+
+@media only screen and (min-width: 600px) {
+    div {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 900px) {
+    div {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    div {
+        width: 25%;
+        float: left;
+    }
+}
+
+
+body, html {
+    height: 100%;
+    margin:0%;
+    /* The image used */
+    background-image: url("thor.png");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+header{
+    background-color: rgb(22, 22, 22);
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+ul {
+    display:inline;
+    background-color: rgb(22, 22, 22) ;
+  }
+.img {
+    float:left;
+}
+
+h1{
+    color:black;
+    font-size: 80px;
+    position: relative;
+    top: 310px;
+    left: 50px;
+}
+
+p{
+    color:white;
+    position: relative;
+    top:315px;
+    left: 50px;
+}
+
+footer {
+    font-size: 20px;
+    position: relative;
+    text-decoration: none;
+
+
+}
+
+

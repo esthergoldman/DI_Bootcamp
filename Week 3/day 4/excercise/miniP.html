@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+background-color: black;
+display: block;}
+
+#color{
+display: grid;
+grid-gap: 5px;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(8, 1fr);
+height: 100vh;
+width: 20%;
+float: left;
+background-color: white;
+border-radius: 5px;
+border-style:solid;
+border-color: white;
+}
+            
+
+.colorP{
+    border-radius: 5px;
+
+}
+
+
+
+#button{
+grid-column-start: 1;
+grid-column-end: 4;
+background-color: lightgrey;
+border-radius: 5px;
+border-style:solid;
+border-color: white;
+}
+
+       
+       
+  #canvas {
+display: grid;
+grid-template-columns: repeat(68, 1fr);
+grid-template-rows: repeat(24, 1fr);
+height: 100vh;
+width: 50%;
+float: left;
+background-color: white;
+border-radius: 5px;
+border-style:solid;
+border-color: white;
+
+
+}
+
+    </style>
+</head>
+
+<body>
+    
+
+    <div id="color">
+        <button id=button onclick="clean()">clear</button>
+
+    </div>
+    
+    <div id="canvas"></div>
+
+
+    <script>
+//create div colors
+let palette= document.body
+let newDiv= document.getElementById("color") //retrieve div id color
+
+let colors = ['#FF6633', 
+		  '#E6B333', '#33991A', '#CC9999', '#99FF99', '#B34D4D',
+		  '#80B300', '#809900', '#E6B3B3', '#6680B3', '#66991A', 
+		  '#FF99E6', '#CCFF1A', '#FF1A66', '#E6331A', '#33FFCC',
+		  '#66994D', '#B366CC', '#4D8000', '#B33300', '#CC80CC'];
+
+function getColor(event){}
+for (let i = 0; i<=colors.length -1; i++){
+        let newP = document.createElement("div")
+        newP.className= "colorP"
+        newP.addEventListener("click", getColor)
+        newP.style.backgroundColor= colors[i];
+        newDiv.appendChild(newP)
+    }
+
+
+
+//canvas
+let palette2= document.body
+let newDiv2= document.getElementById("canvas") //retrieve div id color
+
+function getColor2(event){}
+for (let i = 0; i<=1631; i++){
+        let newP2 = document.createElement("div")
+        newP2.className= "canvas2"
+        newP2.addEventListener("click", getColor2) //add attribute to execute color on click
+        newDiv2.appendChild(newP2)
+    }
+
+
+
+
+//clear buttom RELOAD PAGE
+
+function clean(){
+	window.location.reload();
+} 
+
+
+const colorear = document.querySelectorAll("colorP");
+
+function getColor2(event){
+	//event.target retrives the element that was clicked
+	//the paragraph
+	event.target.style.backgroundColor = "blue"
+} 
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>

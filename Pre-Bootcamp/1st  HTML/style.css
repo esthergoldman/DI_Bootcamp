@@ -1,0 +1,20 @@
+
+
+
+table, th, td {
+    border: 1px solid black;
+    font-family: 'Lato', sans-serif;
+		color: rgb(105, 11, 55);
+  }
+
+
+  body {
+      background-color: pink;
+  }
+
+  h1, h3 {
+      font-style: oblique;
+      color: rgb(64, 18, 138);
+  }
+
+  

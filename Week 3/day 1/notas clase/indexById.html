@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>byId- byClass</title>
+</head>
+<body>
+    
+    <div id= "userTitle">users: </div>
+        <ul>
+          <li class="username">john</li>
+         <li class="username">pete</li>
+     </ul>
+
+
+
+
+
+<!-- byId
+
+    let div= docuemnt.getElementById("usersTitle")
+-->
+
+
+<!-- byClass
+
+    let list = document.getElementsByClassName("username")
+console.log ("list", list[0]) retrieves JOHN , IF I WANT PETE 1
+
+-->
+
+<!-- byId 
+let  list= document.getElementsByTagName("li")
+console.log ("list:", list[0])
+-->
+
+
+<!-- ADD DIV
+1 Let body = document.body
+2 let newDiv= document.createElement("div")
+3 body.appendChild(newDiv)
+
+
+ADD STUFF INSIDE
+1 Let body = document.body
+2 let newDiv= document.createElement("div") // CREATE DIV ELEMENT
+3 let newPara = document.createElement("p") // CREATE P ELEMENT
+4 let newCont =  document.createTextNode("hello new users") // CREATE TEXT NODE
+5 newPara.appendChild(newCont)    //add new content to the paragrap
+
+6 newDiv.appendChild(newPara)  //add the para to the div
+
+7 body.appendChild(newDiv)  // add the div to the body
+
+
+
+ADD CLASS OR ID
+   setAtttribute
+ add class 
+1 Let body = document.body
+2 let newDiv= document.createElement("div") // CREATE DIV ELEMENT
+3       newDiv.setAttribute("class", "newdiv")  //add clas
+
+
+
+setAttribute to img
+3       newDiv=setAttribute("src", "newdiv")  //add clas
+
+
+
+CLASS NAME
+
+1 Let body = document.body
+2 let newDiv= document.createElement("div")
+newDiv.classList.add ("newDiv", "oldDiv")
+
+
+
+
+TOGGLE ---HELPS TO CHANGE CLASSES
+1 Let body = document.body
+2 let newDiv= document.createElement("div")
+newDiv.classList.toggle("newDiv", true/false) its going to add or delete the previousone
+
+
+
+STYLE
+1 Let body = document.body
+2 let newDiv= document.createElement("div")
+newDiv.style.backgroundColor = "red" //option 1
+newDiv=setAttribute("style", "background-color:red")   //option 2
+
+
+if you want STYLE TO THE ELEMENT you need CLASS
+
+
+
+
+
+1 Let body = document.body
+2 let newDiv= document.createElement("div") // CREATE DIV ELEMENT
+
+    for (let i = 0; i<5; i++){
+        let newPara = document.createElement("p")
+        newPara.className= "welcomeUser"
+        let newCont =  document.createTextNode("hello new users" +i)
+        newPara.appendChild(newCont)
+        newDiv.appendChild(newPara)
+    }
+
+body.appendChild(newDiv)
+
+
+ -->
+
+<script>
+
+
+</script>
+
+</body>
+</html>

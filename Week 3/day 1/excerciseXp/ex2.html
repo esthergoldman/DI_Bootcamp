@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">Users:</div>
+  <ul class="list">
+    <li>John</li>
+    <li>Pete</li>
+  </ul>
+  <ul class="list">
+    <li>David</li>
+    <li>Sarah</li>
+    <li>Dan</li>
+  </ul>
+    
+    <script>
+//1
+let ul = document.getElementsByTagName("ul")[0].lastElementChild; //acess ul, [0] cause its the first ul
+let li = ul.lastElementChild //access li
+let liTwo = document.getElementsByTagName('li')[1].innerHTML='Richard';
+console.log(liTwo);
+
+/* //2 takes all the li = esther
+
+let collection = document.getElementsByTagName("li").length;  //gets al li
+//the first line give us how many li we have so we can make the loop
+
+for (let i=0; i <collection; i++){
+    let liTwo = document.getElementsByTagName('li')[i].innerHTML='Esther';
+//change all the names to esther
+
+ */
+
+   // 2 and 3 option
+let ulTwo = document.getElementsByTagName("ul"); //array of all  ul
+for (let selectedUl of ulTwo) {
+    selectedUl.firstElementChild.innerHTML = "esther"
+    let liNew = document.createElement("li");
+    let text = document.createTextNode("hey students"); //assign text
+    liNew.appendChild(text);
+    selectedUl.appendChild(liNew);
+
+}
+
+
+
+
+// 4 delete sarah
+let liFive = document.getElementsByTagName("li")[4];
+
+let secondUl = document.getElementsByTagName("ul")[1];
+secondUl.removeChild(liFive);
+console.log(liFive);
+
+
+//bonus
+let list= document.getElementsByClassName("list");
+
+
+
+
+/* //3  option to change last element
+let ulTwoo = document.getElementsByTagName("ul"); //array of all  ul
+for (let selectedU1m of ulTwoo) {
+    selectedU1m.lastElementChild.innerHTML = "Hey students"
+    console.log(selectedU1m.lastElementChild.innerHTML)
+}
+ */
+
+    </script>
+</body>
+</html>

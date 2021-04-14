@@ -1,0 +1,57 @@
+
+#header{
+    background-image: url("background.jpg");
+    background-color:grey;
+    background-blend-mode: multiply;
+    background-size:cover;
+    background-position: center;
+}
+.navbar-brand{
+    font-size:24px;
+    text-transform: uppercase ;
+    font-weight: 900;
+    color:rgb(247, 235, 247);
+}
+.nav-link{
+    font-size:10px;
+    text-transform: uppercase ;
+    font-weight: 900;
+    color:rgb(247, 235, 247);
+}
+
+
+
+h1{
+    text-align: center;
+    text-decoration: none;
+    color:white;
+    font-size: 50px;
+    font-family: sans-serif;
+    margin-top: 100PX;
+
+}
+
+.row{
+   
+    text-decoration: none; 
+    color:rgb(83, 104, 223);
+    font-size: 15px;
+    font-family: sans-serif;
+
+}
+
+.container-fluid{
+   display:flex;
+    justify-content: center;
+   
+    margin-top:100px;
+}
+/* This is visual help 
+
+.row{
+    border: solid blue;
+}
+.col{
+    border:solid red;
+}
+*/

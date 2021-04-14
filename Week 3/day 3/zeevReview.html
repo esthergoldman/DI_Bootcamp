@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZEEV REVIEW</title>
+</head>
+<body>
+    
+
+
+</body>
+
+
+
+
+
+<script>
+let names = ["ziv", "matan"," jackie", "benjie"];
+
+//1 create a function that ge a name as parameter
+//2 check if the name exist in the array
+//3 yes - return exisst/the name
+//4 no -return not exist
+
+
+
+function retname(p){
+    for (let i = 0; i < names.lenght; i++){
+        if(p===names[1]){
+            return names[i];
+        }
+    }
+return "NOT EXIST"
+}
+let n = retname("matan"); //if insted matan i put xxxx will be not exist cause we dont have xx in the array
+console.log(n);
+
+//----------------
+//second example
+
+//1 create a function that ge a name as parameter
+//2 check if the name exist in the array
+//3 yes - return exisst/the name
+//4 no -return not exist
+// 5 another function that add matan@gmail.com
+
+
+
+
+
+let names = ["ziv", "matan"," jackie", "benjie"];
+
+
+function retname(p){
+    for (let i = 0; i < names.lenght; i++){
+        if(p===names[1]){
+            let mail = addemail(name[i]);
+            return mail;
+        }
+    }
+return "NOT EXIST";
+}
+function addemail(name){
+    return name+"@gmail.com"
+}
+let n = retname("matan"); //if insted matan i put xxxx will be not exist cause we dont have xx in the array
+console.log(n);
+
+
+
+/////////
+//comment what we did
+
+let names = ["ziv", "matan"," jackie", "benjie"];
+
+
+function retname(p){
+
+    //loop the array(lenght)
+    for (let i = 0; i < names.lenght; i++){
+        //if condition to find the name
+        if(p===names[1]){
+            //code to add the extension(email) and then return the extension
+            let mail = addemail(name[i]);
+            return mail;
+        }
+    }
+return "NOT EXIST";
+}
+function addemail(name){
+    return name+"@gmail.com"
+}
+let n = retname("matan"); //if insted matan i put xxxx will be not exist cause we dont have xx in the array
+console.log(n);
+
+
+
+
+//----------
+//second type of function
+let names = ["ziv", "matan"," jackie", "benjie"];
+
+
+function retname(p){
+
+    //loop the array(lenght)
+    for (let i = 0; i < names.lenght; i++){
+        //if condition to find the name
+        if(p===names[1]){
+            //code to add the extension(email) and then return the extension
+            let mail = addemail(name[i]);
+            return mail;
+        }
+    }
+return "NOT EXIST";
+}
+//another way to make a function, the first example and this
+//one do the same, just diffente function, they go to the same thing
+//its a variable that holds a function
+const addemail= function(name){ //this is the other way
+    return name+"@gmail.com"
+}
+let n = retname("matan"); //if insted matan i put xxxx will be not exist cause we dont have xx in the array
+console.log(n);
+
+
+
+
+
+
+
+</script>
+
+</html>

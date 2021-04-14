@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+<h1>ADD GIF</h1>
+<br>
+    <form method="POST" novalidate>
+        {% csrf_token %}
+        <table>
+            {{form}}
+        </table>
+        <input class="btn btn-outline-dark" type="submit" value="upload">
+    </form>
+<br>
+ <a class="btn btn-outline-dark" href="{% url 'index' %}">home</a>
+
+
+{% endblock %}
+
+

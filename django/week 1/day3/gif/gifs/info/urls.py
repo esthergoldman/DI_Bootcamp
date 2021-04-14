@@ -1,0 +1,9 @@
+from django.urls import path
+from . import views 
+
+
+urlpatterns = [
+    path('', views.index, name='index'),
+    path('add_gif/', views.add_gif, name='add_gif'),
+    path('view_gif/', views.view_gif, name='view_gif'),
+]

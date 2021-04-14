@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <a id="dI" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="https://developers.institute/">Developers Institute</a>
+    </p> 
+
+
+    <script>
+        let newDiv = document.getElementById("dI")
+
+//getAttribute('name attribute')
+newDiv.getAttribute('href'); // return '
+
+//getAttribute('name attribute')
+newDiv.getAttribute('hreflang'); // return ' 
+
+//getAttribute('name attribute')
+newDiv.getAttribute('rel'); // return '
+
+//getAttribute('name attribute')
+newDiv.getAttribute('target'); // return '
+
+//getAttribute('name attribute')
+newDiv.getAttribute('type'); // return '
+
+
+//you get --> <div id="elem" about="Elephant" style="color:blue" ></div>
+
+//loop through the attributes of an element
+for (let attr of dI.attributes) { // Lists all attributes
+  alert(attr.name + '=' + attr.value);
+}
+ 
+
+
+
+
+ 
+
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>

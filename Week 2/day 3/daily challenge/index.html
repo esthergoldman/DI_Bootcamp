@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily challenge 8</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+
+
+    const numbers = [5,0,9,1,7,4,2,6,3,8];
+    //array to a string .toString()
+    const x = numbers.toString();
+    console.log (x);
+
+    //array to a string .join()
+    
+    let elements= numbers;
+    console.log(elements.join('-'));
+
+    //bubbleSort
+
+ //two lops bubbleSort
+ 
+ function bubbleSort(arr) {
+      var len = arr.length;
+    
+      for (var i = 0; i < len ; i++) { //outer loop
+        for(var j = 0 ; j < len - i - 1; j++){ //inner loop
+        if (arr[j] < arr[j + 1]) {  //sort order in this case descending if i want ascending change to >
+         
+          var temp = arr[j];  //swapp the numbers
+          arr[j] = arr[j+1];
+          arr[j + 1] = temp;
+        }
+       }
+      }
+      return arr;
+    }
+
+console.log(bubbleSort([5,0,9,1,7,4,2,6,3,8]));
+ 
+
+
+ 
+
+
+
+
+    </script>
+</body>
+</html>

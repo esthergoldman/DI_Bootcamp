@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+</head>
+<body>
+    
+<table id="sampleTable" border="1"> 
+    <tr>
+        <td>Row1 cell1</td> 
+        <td>Row1 cell2</td>
+    </tr> 
+    <tr>
+        <td>Row2 cell1</td> 
+        <td>Row2 cell2</td>
+    </tr> 
+    </table>
+    <!-- BUTTON USER CLICKS -->
+    <input type="button" onclick="insert_Row()" value="Insert row">  
+
+<!-- WHEN THE USER CLICK ON THE BUTTON (ONCLICK) THEN THE FUNCTION INSERT_ROW() WILL BE EXECUTED -->
+
+    <script>
+        
+
+
+        function insert_Row() { //ON CLICK= "INSIDE COMILLAS TEXT"
+        let table = document.getElementById("sampleTable"); //FIND ELEMENT WITH ID = SAMPLETABLE
+        let row = sampleTable.insertRow(0);  //CREATE EMPTY <TR> AND ADD IT TO THE FIRST POSITION, IF WE PUT 2 IT WILL BE AFTER AND NO BEFORE
+        let cell1 = row.insertCell(0); //INSERT NEW CELLS <TD> IN THE 1ST AND 2ND POSITION
+        let cell2 = row.insertCell(1);
+        cell1.innerHTML = "NEW CELL1"; // ADD SOME TEXT TO THE NEW CELLS
+        cell2.innerHTML = "NEW CELL2";
+}
+    
+
+    </script>
+</body>
+</html>

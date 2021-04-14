@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animations</title>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+    <script>
+
+
+
+//how to do animation USING THE DOM
+
+// 1 CREATE TIMER SO WILL RUN DEPENDING ON THE TIMER
+/* 
+
+SETTIMEOUT:
+
+setTimeout
+will run one
+build-in fuction method
+i just need to call it 
+
+setTimeout(function, timer)
+
+
+/ built-in function-method
+// setTimeout(paramaters,parameters);
+// setTimeout(function, timer)
+​
+function sayHi(message) {
+	console.log("console.log in settimeout")
+	let container = document.getElementById("container")
+	container.textContent = message
+	container.style.backgroundColor="yellow"
+}
+​
+​
+// //1
+console.log("1st console.log Before set timeout")
+​
+// //2 - wait 2 second 
+setTimeout(sayHi, 2000, "Your cart is empty");
+​
+// //3
+console.log("2st console.log After set timeout")
+​
+--- setInterval
+​
+​
+let bye = document.getElementById("containerBye")
+​
+//set the setinterval : the interval is called "timing"
+let timing = setInterval(sayHi, 2000);
+​
+bye.addEventListener("click", stopTimer)
+​
+function sayHi() {
+	console.log("console.log in setinterval")   
+}
+​
+function stopTimer(){
+	//stop the interval called "timing"
+	clearInterval(timing)
+
+
+
+
+
+
+
+countdown timer
+
+function setBanner(){
+	span = document.getElementById("span");
+	var sec = 10;
+	let func = setInterval(function(){
+	        if (sec == 0) {
+        	clearInterval(func);
+        }
+      else {
+      	sec--;
+      	span.innerHTML = sec;
+      }
+​
+       },1000);
+	}
+​
+setBanner()
+
+
+
+setInterval
+forever
+
+
+________________
+
+
+
+*/
+
+
+    </script>
+</body>
+</html>

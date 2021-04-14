@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<h1>hello</h1>
+    <a class="btn btn-outline-dark" href="{% url 'add_gif' %}">Add gif</a>
+<br>
+<br>
+    <a class="btn btn-outline-dark" href="{% url 'view_gif' %}">View gif</a>
+    <br>
+    <br>
+    
+    {% for Gif in Gifs%}
+        <img src='{{Gif.url}}' style="width:500px;height:600px;">
+    {%endfor%}
+    
+
+    {% endblock%}
+
+
+ {% comment %} {% for Gif in Gifs%}
+ <li class="span4"> <a class="thumbnail"> <img alt="Gif"
+src="{{ Gif.url }}" height="300" width="300" class="option1" id="incorrect_answer1"></a> </li>    
+    {%endfor%} {% endcomment %}

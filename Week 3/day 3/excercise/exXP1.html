@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <head>
+        <style>
+        #container {
+          width: 400px;
+          height: 400px;
+          position: relative;
+          background: yellow;
+        }
+        #animate {
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          background-color: red;
+        }
+        </style>
+    </head>
+    <body>
+
+        <p><button onclick="myMove()">Click Me</button></p>
+       <!-- parent:yellow box -->
+        <div id="container">
+            <!--child:red box  -->
+          <div id="animate"></div>
+        </div>
+</body>
+
+
+<script>
+
+//set interval repetition depending a timer we do the action X every Y millisecond
+
+function myMove() { //1 the button 
+
+  var elem = document.getElementById("animate");  //1 retrieve element to de want to animate
+
+  var pos = 0;   // position start at zero
+
+  var id = setInterval(frame, 5);  // function will change it 
+
+  function frame() {
+    if (pos == 350) { //test for finished its 400 width container - 50width animate thats why 350
+      clearInterval(id); //clear the id and stop the move
+    } else { //code to change the element style
+      pos++; 
+      elem.style.right = pos + "px"; //start at right
+      elem.style.left = pos + "px"; //end at left
+    }
+  }
+}
+
+
+
+
+</script>
+</html>

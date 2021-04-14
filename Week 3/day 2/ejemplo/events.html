@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Events</title>
+</head>
+<body>
+    <!--    JS EVENTS
+
+----------EVENTS THAT RESPOND USER 
+        events: the user writing
+        1. writes inside the input
+        2.clicks the button to save whatever he wrote
+
+
+     -ONCLICK:
+    
+     1. En html crear on click
+    <p onclick= "clickParagraph()">Hello</p>
+
+    2. en javascript
+                    the onclick= "clickParagraph " on html tiene que ser el mismo que el nombre de la funcion en javaScript
+        function clickParagraph() {
+        document.getElementById("p").style.backgroundColor = "yellow";
+    }
+
+    we can do toggle = document.getElementById("p").classList.toggle("welcomeUser")
+
+
+    if you have multiple events ONCLICK ITS HARD TO FOLLOW
+
+    -ANOTHER WAY
+
+    EN HTML
+    <p id="p">hello </p>
+
+    En JAVASCRIP
+
+   document.getElementById("p").onclick = function () {
+	console.log("hello")
+	document.getElementById("p").classList.toggle("welcomeUser")
+
+
+----------
+
+Create a container on the HTML 
+file to add new elements 
+(using this container as a parent)
+
+
+<body>
+  	<div id="container"></div>
+​
+	<script src="script.js"></script>
+</body>
+
+   ====CON JAVASCRIPT CREA 3 HELLOS DENTRO DEL DIV EN HTML
+    
+ let container = document.getElementById("container")
+for (let i = 0; i<3; i++){
+	let p = document.createElement("p")
+	let content = document.createTextNode("Hello")
+	p.appendChild(content)
+	container.appendChild(p)
+}
+    
+    
+    
+
+--3rd option
+
+addEventListener()   CREATE MULTPLY EVENTS
+
+WE DONT WRITE ANYTHING ON THE HTML, NO ATTRIBUTE OR WHATEVER
+WE JUST CREATE THE ELEMENT WE WANT
+
+<p id="p">hello</p>
+
+JUST JAVASCRIPT
+
+
+let paragraph = document.getElementById("p")  //retrieve
+paragraph.addEventListener("click",clickparagraph)
+
+function clickparagrah(event){ //the common name for this parameter EVENT OR E
+    console.log("event : ", event.target) //retrieves the element that was clicked
+    event.target.style.backgroundColor ="yellow"  //the paragraph
+}
+
+
+    
+    
+
+----RETRIEVE WHAT THE USER WROTE IN A FORM
+let formHtml = document.forms[0]
+let buttonHtml = formHtml.elements[1]
+buttonHtml.addEventListener("click", retrieveInput)
+​
+function retrieveInput (event) {
+	//preventing the button from refreshing the page
+	event.preventDefault()
+	let inputHtml = event.target.previousElementSibling
+​
+	let divHtml = document.getElementById("container")
+	//create a paragraph
+	let p = document.createElement("p")
+	//create a text node
+	let content = document.createTextNode(inputHtml.value)
+	//append the text node to the paragraph
+	p.appendChild(content)
+	// append the p to the div
+	divHtml.appendChild(p)
+
+
+
+--------------------
+the html 
+<body>
+​
+	<p id="p">Hello how are you</p>
+	<div>
+		<ul id="list" name="listFruits">
+			<li>Apple</li>
+			<li>Pear</li>
+			<li>Banana</li>
+		</ul>
+	</div>
+​
+​
+	<script src="script"></script>
+</body>
+
+the javascript
+
+//retrieve the element
+let paragraph = document.getElementById("p")
+paragraph.addEventListener("click",clickMe)
+​
+//retrieve the element
+let listShopping =  document.getElementById("list")
+listShopping.addEventListener("click",clickMe)
+​
+function clickMe(event){
+	console.log("event : ", event)
+	//event.target retrives the element that was clicked
+	//the paragraph
+	event.target.style.backgroundColor = "yellow"
+}
+
+
+-----------------
+
+//Add 5 paragraphs and 5 images 
+at the same time to the DOM---------------
+​
+let bodyWebsite = document.body
+let newDiv = document.createElement("div")
+​
+for (let i = 0; i < 5; i++){
+	let newImage = document.createElement("img")
+	newImage.setAttribute("src", "cat.jpg")
+	let newParagraph = document.createElement("p")
+	newParagraph.className = "welcomeUser"
+	let newContent = document.createTextNode("Hello new users " + i)
+	newParagraph.appendChild(newContent)
+	newDiv.appendChild(newParagraph)
+	newDiv.appendChild(newImage)
+}
+​
+bodyWebsite.appendChild(newDiv)
+
+
+to do list 
+
+html 
+ <div id="container"></div>
+    -->
+</body>
+</html>

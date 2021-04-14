@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<h1>hello</h1>
+    <a class="btn btn-outline-dark" href="{% url 'add_gif' %}">Add gif</a>
+<br>
+<br>
+    <a class="btn btn-outline-dark" href="{% url 'index' %}">go back</a>
+    <br>
+    <br>
+    
+    {% for Gif in Gifss%}
+        <img src='{{Gif.url}}' style="width:500px;height:600px;">
+    {%endfor%}
+    
+
+    {% endblock%}

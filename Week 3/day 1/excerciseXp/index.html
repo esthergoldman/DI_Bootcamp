@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExcerciseXp11</title>
+</head>
+<body>
+<!--  excercise 1 
+ <div id="navBar">
+    <ul id="myList">
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">My Friends</a></li>
+        <li><a href="#">Messenger</a></li>
+        <li><a href="#">My Pics</a></li>
+    </ul>
+</div>  
+ -->
+
+    
+<!-- excercise 4
+
+    <div>Users:</div>
+    <ul>
+      <li>John</li>
+      <li>Pete</li>
+    </ul>
+
+ 
+  -->
+
+<!-- excercise2 
+
+  <div id="container">Users:</div>
+  <ul class="list">
+    <li>John</li>
+    <li>Pete</li>
+  </ul>
+  <ul class="list">
+    <li>David</li>
+    <li>Sarah</li>
+    <li>Dan</li>
+  </ul>-->
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+/* excercice 1
+//1
+let navBar= document.getElementById("navBar")
+console.log(navBar);
+navBar.setAttribute("id", "socialNetworkNavigation") 
+
+//2
+
+
+let ul = document.getElementsByTagName("ul")[0] //acess ul, [0] cause theres only one
+console.log(ul)
+
+let newLi = document.createElement("li");  // CREATE  access li ELEMENT
+let anchor = document.createElement("a");  // access A tag
+let att = document.createAttribute("href"); //acess href
+att.value = "#"; // assigned a value "#" to href
+anchor.setAttributeNode(att);
+let text = document.createTextNode("Logout"); //assign text
+anchor.appendChild(text);
+newLi.appendChild(anchor);
+ul.appendChild(newLi);
+
+console.log(newLi);
+
+ //3
+ 
+ let newU1 = document.getElementsByTagName("ul")[0].firstElementChild.innerHTML;
+ let newU1Last = document.getElementsByTagName("ul")[0].lastElementChild.innerHTML;
+
+ console.log(newU1);
+ console.log(newU1Last);
+ */
+
+       
+ /* excercice 2
+//1
+let ul = document.getElementsByTagName("ul")[0].lastElementChild; //acess ul, [0] cause its the first ul
+let li = ul.lastElementChild //access li
+let liTwo = document.getElementsByTagName('li')[1].innerHTML='Richard';
+console.log(liTwo);
+
+
+let ulTwo = document.getElementsByTagName("ul"); //array of all  ul
+for (let selectedUl of ulTwo) {
+    selectedUl.firstElementChild.innerHTML = "esther"
+    let liNew = document.createElement("li");
+    let text = document.createTextNode("hey students"); //assign text
+    liNew.appendChild(text);
+    selectedUl.appendChild(liNew);
+
+}
+
+
+
+
+// 4 delete sarah
+let liFive = document.getElementsByTagName("li")[4];
+
+let secondUl = document.getElementsByTagName("ul")[1];
+secondUl.removeChild(liFive);
+console.log(liFive);
+
+
+//bonus
+let list= document.getElementsByClassName("list");
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+/* 
+  //excercise 4
+ 
+ //1
+  const div = document.getElementsByTagName("div");
+for (let i=0; i < div.length; i++){
+    div[i].style.padding="50px 10px 20px 30px";
+    div[i].style.backgroundColor= "lightblue";
+
+} 
+
+//2 1
+var list = document.querySelector("li");
+if (list.hasChildNodes()) {
+  list.removeChild(list.childNodes[0]);
+}
+
+
+//2 2
+const li= document.getElementsByTagName("li");
+for (let i=0; i < li.length; i++){
+    li[i].style.border = "thick solid #0000FF";
+}
+
+
+  //3
+document
+.querySelector("body").style.fontFamily = "Impact,Charcoal,sans-serif";
+ 
+
+//4
+
+function myFunction() {
+  var alert = document.getElementsByTagName("div")[0];
+  
+    if (backgroundColor === "lightblue");
+    alert("Hello x and y");
+
+}
+
+
+ */
+
+
+
+
+ </script>
+
+</body>
+</html>

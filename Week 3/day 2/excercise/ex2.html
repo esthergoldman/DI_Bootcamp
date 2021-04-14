@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="jsstyle">Style</button> 
+
+
+
+    <script>
+        //1 find element by id
+        let button= document.getElementById("jsstyle")
+        
+button.addEventListener("mouseover", myB);
+button.addEventListener("click", mySecondB);
+button.addEventListener("mouseout", myThirdB);
+
+function myB() {
+  document.getElementById("demo").innerHTML += "Moused over!<br>"
+}
+
+function mySecondB() {
+  document.getElementById("demo").innerHTML += "Clicked!<br>"
+}
+
+function myThirdB() {
+  document.getElementById("demo").innerHTML += "Moused out!<br>"
+}
+    </script>
+</body>
+</html>

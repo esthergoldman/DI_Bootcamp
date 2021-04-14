@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop</title>
+</head>
+<body>
+    
+
+
+
+    ><script>
+
+
+        //how many times should it be repeated
+        for (let i = 0; i < 2; i++) {
+            //statement that will be repeated
+    console.log("the current number is " + i)
+}
+
+
+//increment by 1
+//counter : 1
+//counter : 2
+//counter : 3
+
+
+//we need to create a counter (aqui empieza en 1 y termina en 4)
+
+for (let counter = 1; counter <= 4; counter++ ){
+    //action or statement, will run only if counter <=4 is true
+    console.log("the loops runs, counter : ", counter)
+}
+
+
+
+
+//i can have loop and if
+
+for (let counter = 1; counter <= 4; counter++ ){
+    if(counter==2)
+    console.log("the loops runs, counter : ", counter)
+}
+
+
+
+
+//break; keyword=== we are out of the loop
+for (let counter = 1; counter <= 4; counter++ ){
+    console.log("the loop runs,counter : ", counter)
+    if(counter==2)
+    console.log("yeah")
+    break;
+}
+
+
+//continue ===im not going to break im going to continue
+for (let counter = 1; counter <= 4; counter++ ){
+    if(counter==2)
+    console.log("yeah")
+    continue; //as soon 
+}
+
+
+
+
+//
+
+let colors= ["blue", "red", "yellow"]
+    console.log(colors) // will console log with the coma
+
+
+
+//EJEMPLO:
+
+//con loop sale sin coma
+let colors= ["blue", "red", "yellow"]
+//console.log
+//blue
+//red
+//yellow
+
+
+// repetive code not good console.log(colors [0], colors [1],colors [2])
+
+//instead we do a for loop
+
+//run three time
+for (let counter = 1; counter <= 2; counter++ ){
+    //console.log the colors
+    console.log(colors[counter])
+
+//because the loop is counting 3 timers i can console log "    console.log(colors[counter])"" 
+//without need of doing 3 times beacuse it already have the 3 on the loop
+
+//1st loop : counter = 0 ---> my console.log will be colors [0]
+//2nd loop : counter = 1 ---> my console.log will be colors [1]
+//3rd loop : counter = 2 ---> my console.log will be colors [2]
+
+
+
+
+
+//ejemplo infinite "if i dont know the end of the array"
+
+
+let colors= ["blue", "red", "yellow"]
+//console.log
+//blue
+//red
+//yellow 
+//like this but million of times.... i just know i want each one by one
+
+//it means i dont know how many iteams are in my array
+
+//somethng more global needs to be done
+
+//end of the array is the length of the array
+
+
+for (let counter = 0; counter < colors.length; counter++ ){
+    //console.log the colors
+    console.log(colors[counter])
+
+
+
+
+//ejemplo while
+
+//thers no starting or ending point
+//it will ruin forever
+//becareful to not create endless loop
+//be sure you have a code that make at one time the condition fault
+//and will stop the loop
+
+let n=0;
+while (n < 3){
+    n++;
+    console.log(n)
+}
+
+//we use only when we
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

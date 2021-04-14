@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+</head>
+<body>
+    
+
+
+
+
+    <script>
+/* 
+
+//declaring a function
+   //no parameters because the parentheses are empty
+function userInfo(){
+    console.log("Hello User")
+}
+
+
+//invoke/call the function
+userInfo()//so the console.log is display
+
+
+///hello david
+
+--------------------------------------------------------
+//function with parameteres (its whats inside parentesis)
+ */
+
+//declaring a function
+
+//parameters is username
+ function userInfo(username){
+    console.log("Hello" + username)
+}
+
+//invoke/call the function
+
+//ARGUMENT
+userInfo("David")
+userInfo("Ruth")
+userInfo("Mary")
+//the code is run 3 times
+
+//------------------------------------
+
+
+//global variable
+//declared in the global scope
+let mood= "happy"
+let username="sarah"
+
+/////how to add more parameters??? just , and the name
+function userInfo(username,age,height){
+    console.log("Hello" + username)
+    console.log("age" + age)
+    console.log("height" + height)
+}
+
+
+
+//local means used in the local scope: in a block
+//functions, loops, conditions
+
+//global means used in th global scope
+//outside of a local
+
+
+//invoke/call the function
+//ARGUMENT
+userInfo("David",25,1,7)
+userInfo("Ruth")
+userInfo("Mary")
+//the code is run 3 times
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

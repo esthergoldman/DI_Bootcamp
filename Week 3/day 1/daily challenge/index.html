@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Challenge: Create a solar system</title>
+        <style>
+            body {
+                background-color: black;
+                padding: 10px;
+            }
+            .planet {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                text-align: center;
+                padding: 10px;
+                position: relative;
+            }
+            .moon {
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background: rgb(237, 237, 237);
+            }
+        </style>
+    </head>
+    <body>
+
+
+    <script>
+
+        /// I NEED A LOOP FOR THE MOONS...HOW ?
+
+let planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter"];
+
+
+let mercury = document.createElement("div"); //ARRAY OF DIV
+    mercury.className = "planet";
+
+    mercury.style.backgroundColor= "purple";
+
+    document.body.appendChild(mercury); //append the element to the html body
+
+
+
+
+
+
+
+
+
+
+////////
+let venus = document.createElement("div");
+    venus.className = "planet";
+
+    venus.style.backgroundColor= "yellow";
+
+
+    document.body.appendChild(venus); //append the element to the html body
+/////////
+
+let jupiter = document.createElement("div");
+    let moonJ= document.createElement("div")
+
+    jupiter.className = "planet";
+        moonJ.className= "moon"
+
+    jupiter.style.backgroundColor= "blue";
+        moonJ.style.backgroundColor= "white";
+
+
+    document.body.appendChild(jupiter); //append the element to the html body
+        document.body.appendChild(moonJ); 
+
+
+
+
+
+
+
+
+
+//////
+let mars = document.createElement("div");
+    let moonM= document.createElement("div")
+
+mars.className = "planet";
+    moonM.className= "moon"
+
+mars.style.backgroundColor= "red";
+    moonM.style.backgroundColor= "white";
+
+
+document.body.appendChild(mars); //append the element to the html body
+    document.body.appendChild(moonM); 
+
+////// EARTH
+let earth = document.createElement("div");
+
+    let moon= document.createElement("div")
+
+earth.className = "planet";
+
+    moon.className= "moon"
+
+ earth.style.backgroundColor= "lightblue";
+ 
+    moon.style.backgroundColor= "white";
+
+document.body.appendChild(earth); //append the element to the html body
+    document.body.appendChild(moon); 
+
+
+    let div= document.body.children[0]
+
+
+
+
+
+
+
+
+
+
+</script>
+    </body>
+</html>
